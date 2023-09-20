@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            background-color: #4169e1;
+            color: white;
+
+        }
+        div{
+            font-family: arial;
+            width: 200px;
+            height: 200px;
+            border: solid white 1px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 180px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="area" onmouseover="abrir()" onmouseout="fechar()" onclick="clicar()">
+        interaja...
+    </div>
+    <script>
+        var click = 0
+        function abrir(){
+            a = document.getElementById("area")
+            a.style.background = "black"
+        }
+        function fechar(){
+            b = document.getElementById("area")
+            b.style.background = "#4169e1"
+        }
+        function clicar(){
+            click += 1
+            c = window.document.getElementById("area")
+            c.innerText = "Clicou!" + click
+        }
+    </script>
+</body>
+</html>

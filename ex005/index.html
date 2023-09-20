@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando estudos com DOM</title>
+    <style>
+        body{
+            background: rgb(36, 15, 1);
+            color: rgb(252, 255, 100);
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o <strong>resultado</strong></p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName("p")[0]
+        window.document.write("Olá Mundo!")
+        window.document.write(window.navigator.appName)
+        window.document.write(window.document.URL)
+        window.document.write(p1.innerText)
+        // p1.style.color = "blue"
+        window.alert(p1.innerHTML)
+        var d = window.document.querySelector("div#msg")
+        d.style.color = "blue"
+    </script>
+</body>
+</html>
