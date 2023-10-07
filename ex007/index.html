@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            background-color: rgb(255, 36, 109);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <p>Coloque um número!</p>
+    <input type="number" name="n1" id="in1">
+    <p>Coloque outro número!</p>
+    <input type="number" name="n" id="in2">
+
+    <button onclick="clicar()">Somar!</button>
+    <h3 id="ires">Resultado</h3>
+    <script>
+        function clicar(){
+            var vn1 = window.document.getElementById("in1")
+            var vn2 = window.document.getElementById("in2")
+            var vnn1 = Number(vn1.value)
+            var vnn2 = Number(vn2.value)
+            var res = window.document.getElementById("ires")
+            var re 
+            re = vnn1 + vnn2
+            res.innerHTML = `A soma entre ${vnn1} e ${vnn2} é igual a: ${re}`
+        }
+
+    </script>
+</body>
+</html>
